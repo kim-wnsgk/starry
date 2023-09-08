@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.content {
+    object-fit: cover;
+    display: flex;
+    height: 100%;
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+
+    & .mainTitle {
+        font-size: 3rem;
+    }
+
+    & .subTitle {
+        margin-top: 20px;
+        opacity: .7;
+    }
+}
+
+.menus {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    font-size: 1.5rem;
+    transition: font-size .3s;
+    color: white;
+
+    &:hover {
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+}
+
+.starAni {
+    flex: 1;
+    background-color: aliceblue;
+}
