@@ -1,0 +1,23 @@
+.container {
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.content {
+    object-fit: cover;
+    display: flex;
+    height: 100%;
+}
+
+.leftBanner {
+    width: 300px;
+    background-color: aliceblue;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px;
+}

@@ -1,11 +1,14 @@
 import React from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 import styles from './Main.module.css'
 import Starfield from './component/Starfield';
 
 function Main() {
+    const nav = useNavigate();
     return (
-        <div className={styles.container} style={{ backgroundImage: `url('./mainstar.jpg')` }}>
+        <div className={styles.container}>
             <Starfield />
             <div className={styles.content} >
                 <div className={styles.banner}>
@@ -18,14 +21,15 @@ function Main() {
                         </div>
                     </div>
                     <div className={styles.menus}>
-                        <div className={styles.menu}>
-                            first link
+                        <div className={styles.menu}
+                            onClick={() => nav('/region')}>
+                            별 관측지
                         </div>
                         <div className={styles.menu}>
-                            second link
+                            별 관측지 공유
                         </div>
                         <div className={styles.menu}>
-                            first link
+                            천체 뉴스
                         </div>
                         <div className={styles.menu}>
                             first link

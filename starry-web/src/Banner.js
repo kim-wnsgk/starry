@@ -13,7 +13,7 @@ function Banner() {
             </div>
             <div className={styles.content}>
                 <div className={styles.button}>
-                    <Link to='/result'>별 관측지</Link>
+                    <Link to='/region'>별 관측지</Link>
                 </div>
                 <div className={styles.button}>
                     <Link to='/result'>별 관측지</Link>
